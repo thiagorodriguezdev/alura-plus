@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  height: 100vh;
+  height: 80vh;
   display: grid;
   grid-template-columns: 50% 50%;
 }
@@ -155,4 +155,40 @@ body {
 .footer__paragrafo {
   font-size: 1.4rem;
   color: var(--cinza-secundario);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: block;
+    background-image: none;
+  }
+
+  .container__imagem {
+    width: 50vw;
+  } 
+
+  .container__caixa {
+    margin: 1.5rem 1.5rem;
+  }
+
+  .secundario {
+    margin: 0 1.5rem;
+    text-align: center;
+  }
+
+  .secundario__imagem {
+    width: 50vw;
+  }
+
+  .container__dispositivos {
+    margin: 0 1.5rem;
+  }
+
+  .dispositivos__image {
+    display: block;
+  }
+
+  .footer__links {
+    flex-direction: column;
+  }
 }
